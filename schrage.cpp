@@ -37,7 +37,6 @@ int main()
     underPreparationTasks.push(task);
 
   int t = 0;
-  int k = 0;
   int cmax = 0;
 
   while(!underPreparationTasks.empty() || !readyTasks.empty())
