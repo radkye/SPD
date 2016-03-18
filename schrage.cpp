@@ -39,8 +39,6 @@ int main()
   int t = 0;
   int k = 0;
   int cmax = 0;
-  int sprawdzenie = 0;
-  std::vector<Task> permutations;
 
   while(!underPreparationTasks.empty() || !readyTasks.empty())
     {
@@ -56,9 +54,7 @@ int main()
 	{       
 	  Task zadanie = readyTasks.top();
 	  readyTasks.pop();
-	  k = k + 1;
 	  t = t + zadanie.estimatedTime;
-	  permutations.push_back(zadanie);
 	  cmax = std::max(cmax, t + zadanie.deliveryTime);
 	}
     }
